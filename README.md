@@ -47,7 +47,7 @@ partition <- function(df, n, probs) {
 
 msd <- function(x, y) sqrt(mean((x - y) ^ 2))
 
-# Genearte 100 rbootandom test-training splits
+# Generate 100 boostrap random test-training splits
 boot <- partition(mtcars, 100, c(test = 0.8, training = 0.2))
 boot
 
